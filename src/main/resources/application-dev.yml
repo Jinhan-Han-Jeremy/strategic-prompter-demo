@@ -1,0 +1,23 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      force: true
+
+spring:
+  data:
+    mongodb:
+      host: 127.0.0.1 # MongoDB 호스트 주소
+      port: 27017 # MongoDB 포트
+      database: your-dev-database-name # 개발 환경용 데이터베이스 이름
+
+logging:
+  pattern:
+    console: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
+  level:
+    org:
+      springframework:
+        data:
+          mongodb: DEBUG # MongoDB 관련 로깅 레벨 설정
