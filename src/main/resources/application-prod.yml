@@ -10,7 +10,7 @@ spring:
     mongodb:
       host: localhost # MongoDB 호스트 주소
       port: 27017 # MongoDB 포트
-      database: your-database-name # 사용할 데이터베이스 이름
+      database: strategic-prompter-prod-0 # 사용할 데이터베이스 이름
 
 logging:
   pattern:
